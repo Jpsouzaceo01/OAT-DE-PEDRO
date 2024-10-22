@@ -1,0 +1,78 @@
+/* Estilo de fundo com gradiente colorido */
+.bg-gradient {
+    background: linear-gradient(to right, #ff6f61, #6a82fb); /* Gradiente colorido */
+    color: white;
+}
+
+.container {
+    margin-top: 50px; /* Espaçamento acima do contêiner */
+}
+
+.navbar-brand {
+    color: #3498db; /* Azul vibrante para o nome "Consulta DDD" */
+}
+
+.navbar-brand:hover {
+    color: #2980b9; /* Azul mais escuro ao passar o mouse */
+}
+
+h2 {
+    color: #f39c12; /* Laranja vibrante para o título */
+}
+
+button {
+    background-color: #e74c3c; /* Vermelho brilhante para o botão */
+    border: none; /* Remove a borda padrão */
+    color: white; /* Cor do texto do botão */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+button:hover {
+    background-color: #c0392b; /* Vermelho mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px; /* Mais padding para maior conforto visual */
+    border-radius: 4px;
+    background-color: #e8f5e9; /* Fundo verde claro */
+    text-align: left; /* Alinhamento do texto à esquerda */
+    transition: all 0.3s; /* Transição suave para o resultado */
+}
+
+.result.success {
+    border: 2px solid #28a745; /* Verde para sucesso */
+    background-color: #d4edda; /* Fundo verde claro */
+}
+
+.result.error {
+    border: 2px solid #dc3545; /* Vermelho para erro */
+    background-color: #f8d7da; /* Fundo vermelho claro */
+}
+
+footer {
+    margin-top: 20px; /* Espaçamento acima do rodapé */
+    color: #666; /* Cor do texto do rodapé */
+}
+
+/* Efeitos adicionais para o resultado */
+.result {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Animação ao aparecer o resultado */
+.result.show {
+    animation: fadeIn 0.5s; /* Animação suave ao mostrar o resultado */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
